@@ -3,6 +3,10 @@
 # 忽略错误
 set -e
 
+git add .
+git commit -m 'add'
+git push
+
 # 构建
 npm run docs:build
 
