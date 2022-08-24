@@ -9,12 +9,46 @@ export default defineConfig({
     logo: '/logo.svg',
     nav: [
       { text: '首页', link: '/' },
-      { text: '学习笔记', link: '/item-3' },
-      { text: '造轮子', link: '/item-3' },
-      { text: '关于', link: '/item-3' }
+      { text: '我的笔记', link: '/article/' },
+      { text: '关于', link: '/about/' }
     ],
     sidebar: {
-
+      '/article/': [
+        {
+          text: '重学JavaScript',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: 'JavaScript基础',
+              link: '/article/js/basic'
+            },
+            {
+              text: 'JavaScript进阶',
+              link: '/article/js/advanced'
+            }
+          ]
+        },
+        {
+          text: '项目实战',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: 'vue滚动视图组件',
+              link: '/article/wheel/scroll-view'
+            },
+            {
+              text: '搭建vue3+ts+vite项目',
+              link: '/article/wheel/vue3-demo'
+            },
+            {
+              text: '实现弹幕功能',
+              link: '/article/wheel/danmaku'
+            }
+          ]
+        },
+      ]
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hu3dao' },
@@ -24,6 +58,6 @@ export default defineConfig({
         },
         link: 'https://juejin.cn/user/2621662810352423'
       }
-    ]
+    ],
   }
 })
