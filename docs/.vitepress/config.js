@@ -43,7 +43,7 @@ export default defineConfig({
               link: '/article/wheel/vue3-demo'
             },
             {
-              text: '实现弹幕功能',
+              text: '实现可自定义样式的弹幕功能',
               link: '/article/wheel/danmaku'
             }
           ]

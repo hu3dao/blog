@@ -99,7 +99,7 @@ _extractDanmu():void {
   }
 }
 ```
-_extractBarrage方法遍历等待队列，依次按顺序执行_pushToTrack方法。当返回True时，则说明该弹幕成功加入到合适的轨道中，否则说明目前没有合适的轨道则结束推送
+_extractDanmu方法遍历等待队列，依次按顺序执行_pushToTrack方法。当返回True时，则说明该弹幕成功加入到合适的轨道中，否则说明目前没有合适的轨道则结束推送
 
 _pushToTrack方法的作用是：1.推送弹幕到轨道；2.创建弹幕实例；3.计算弹幕的速度
 ```ts
@@ -557,7 +557,7 @@ speed: number = 0 // 速度
 width: number = 0 // 宽度
 stop: boolean = false // 是否暂停
 ```
-通过vue的render和h函数创建弹幕并挂载到d容器上
+通过vue的render和h函数创建弹幕并挂载到容器上
 ```ts
 create(danmuComp: any, danmuProps: T) {
   const {dom} = this.danmuContainer
